@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    Mark Salemi
-  </body>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+
+	/*while(true)
+	{
+	animatepurple();
+	}
+   */
+});
+</script> 
+</head>
+ 
+<body>
+
+<div style="background:#290029;height:100px;width:100px;position:absolute;">
+</div>
+
+<script>
+
+animatepurple();
+
+
+function animatepurple()
+{
+	var div=$("div");
+    div.animate({height:'100%',opacity:'0.4'},"slow");
+    div.animate({width:'100%',opacity:'0.8'},"slow");
+    div.animate({height:'10%',opacity:'0.4'},"slow");
+    div.animate({width:'10%',opacity:'0.8'},"slow");
+    animatepurple();
+}
+</script>
+</body>
+
 </html>
